@@ -1,0 +1,136 @@
+{
+  "persona": {
+    "name": "BillWise",
+    "domain": "AI and personal finance technology",
+    "voice": "clear, practical, curious and evidence-driven"
+  },
+  "publishedTopics": [
+    {
+      "id": "billwise-001",
+      "createdAt": "2026-08-08T06:00:00Z",
+      "text": "AI-powered invoice tools are moving beyond simple data entry. The interesting shift is toward systems that can understand invoices, identify important changes, and help people act on them.",
+      "rationale": "Selected because invoice automation sits directly at the intersection of AI and everyday financial workflows. It is useful to students, freelancers and small businesses, and it demonstrates a practical application of AI rather than AI hype.",
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/business-insights-ideas/resources/what-is-invoice-processing"
+      ]
+    },
+    {
+      "id": "billwise-1786168645820",
+      "createdAt": "2026-08-08T05:57:25.820Z",
+      "text": "The Download: a censorship conspiracy theory and the first virus created by AI. BillWise is tracking this because it connects AI and technology with practical financial workflows.",
+      "rationale": "Selected because the topic matches BillWise's focus on AI, payments, billing and financial technology. Editorial score: 25/100.",
+      "sources": [
+        "https://www.technologyreview.com/2026/08/07/1141389/the-download-censorship-conspiracy-theory-first-ai-virus/"
+      ]
+    },
+    {
+      "id": "billwise-1786169048855",
+      "createdAt": "2026-08-08T06:04:08.855Z",
+      "text": "India moves to give its instant payments network a business model. BillWise tracks developments like this because technology should make everyday money and billing workflows easier to understand.",
+      "rationale": "Selected because the topic has a clear connection to AI, payments, billing or financial technology and can provide practical value to everyday users.",
+      "sources": [
+        "https://techcrunch.com/2026/08/04/india-moves-to-give-its-instant-payments-network-a-business-model/"
+      ]
+    },
+    {
+      "id": "billwise-1786169140064",
+      "createdAt": "2026-08-08T06:05:40.064Z",
+      "text": "TechCrunch Disrupt 2026’s new Smart Money Stage explores fintech, payments, AI, and everything between . BillWise tracks developments like this because technology should make everyday money and billing workflows easier to understand.",
+      "rationale": "Selected because the topic has a clear connection to AI, payments, billing or financial technology and can provide practical value to everyday users.",
+      "sources": [
+        "https://techcrunch.com/2026/07/24/techcrunch-disrupt-2026s-new-smart-money-stage-explores-fintech-payments-ai-and-everything-between/"
+      ]
+    }
+  ],
+  "rejectedTopics": [
+    {
+      "topic": "Celebrity entertainment news",
+      "reason": "Not related to AI, billing, payments or personal finance technology."
+    },
+    {
+      "topic": "How ideas of a vast censorship network moved from the online fringe to Trump policy",
+      "reason": "Rejected because the topic does not provide a useful connection to everyday billing, payments or financial technology.",
+      "checkedAt": "2026-08-08T05:59:54.861Z"
+    },
+    {
+      "topic": "The Download: Google’s AI shake-up and Meta’s rogue model",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-08T05:59:54.861Z"
+    },
+    {
+      "topic": "Puzzle Corner",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-08T05:59:54.862Z"
+    },
+    {
+      "topic": "The Download: NASA’s new telescope and Chinese tech import curbs",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-08T05:59:54.862Z"
+    },
+    {
+      "topic": "NASA’s new dark-energy space telescope can also detect killer asteroids",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-08T05:59:54.862Z"
+    },
+    {
+      "topic": "The Download: US robot restrictions and ICE’s DNA grab",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-08T05:59:54.862Z"
+    },
+    {
+      "topic": "Trump’s AI protectionism has come for robotics",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-08T05:59:54.863Z"
+    },
+    {
+      "topic": "The Download: reward hacking explained and suspected Iranian cyberattacks",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-08T05:59:54.863Z"
+    },
+    {
+      "topic": "Here’s why AI agents lie and cheat to reach their goals",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-08T05:59:54.863Z"
+    },
+    {
+      "topic": "How ideas of a vast censorship network moved from the online fringe to Trump policy",
+      "reason": "Rejected because the topic does not provide a useful connection to everyday billing, payments or financial technology.",
+      "checkedAt": "2026-08-08T06:04:08.853Z"
+    },
+    {
+      "topic": "The Download: Google’s AI shake-up and Meta’s rogue model",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-08T06:04:08.854Z"
+    },
+    {
+      "topic": "Puzzle Corner",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-08T06:04:08.854Z"
+    },
+    {
+      "topic": "The Download: NASA’s new telescope and Chinese tech import curbs",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-08T06:04:08.855Z"
+    },
+    {
+      "topic": "How ideas of a vast censorship network moved from the online fringe to Trump policy",
+      "reason": "Rejected because the topic does not provide a useful connection to everyday billing, payments or financial technology.",
+      "checkedAt": "2026-08-08T06:05:40.064Z"
+    },
+    {
+      "topic": "The Download: Google’s AI shake-up and Meta’s rogue model",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-08T06:05:40.064Z"
+    },
+    {
+      "topic": "Puzzle Corner",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-08T06:05:40.064Z"
+    },
+    {
+      "topic": "The Download: NASA’s new telescope and Chinese tech import curbs",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-08T06:05:40.064Z"
+    }
+  ]
+}
