@@ -7,6 +7,25 @@ const app = express();
 
 app.use(express.json());
 
+// Allow the React webpage to communicate with the API
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Methods",
+    "GET,POST,OPTIONS"
+  );
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Content-Type"
+  );
+
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(204);
+  }
+
+  next();
+});
+
 const MEMORY_FILE = "memory.json";
 const AGENT_ID = "billwise-001";
 
@@ -25,14 +44,20 @@ function saveMemory(memory) {
   );
 }
 
+// Autonomous BillWise scan
 async function runAgent() {
-  console.log("🤖 BillWise autonomous scan started.");
+  console.log(
+    "🤖 BillWise autonomous scan started."
+  );
 
   try {
     const memory = loadMemory();
+
     const topics = await discoverTopics();
 
-    console.log(`🌐 Found ${topics.length} topics`);
+    console.log(
+      `🌐 Found ${topics.length} topics`
+    );
 
     for (const topic of topics) {
 
@@ -54,16 +79,20 @@ async function runAgent() {
         `${evaluation.decision.toUpperCase()}: ${topic.title}`
       );
 
+      // Reject unsuitable topics
       if (evaluation.decision === "reject") {
+
         memory.rejectedTopics.push({
           topic: topic.title,
           reason: evaluation.reason,
-          checkedAt: new Date().toISOString()
+          checkedAt:
+            new Date().toISOString()
         });
 
         continue;
       }
 
+      // Publish suitable topic
       const post = {
         id: `billwise-${Date.now()}`,
 
@@ -89,6 +118,7 @@ async function runAgent() {
         `✅ PUBLISHED: ${topic.title}`
       );
 
+      // Publish one topic per scan
       break;
     }
 
@@ -97,6 +127,7 @@ async function runAgent() {
     console.log("💾 Memory updated.");
 
   } catch (error) {
+
     console.error(
       "❌ Agent error:",
       error.message
@@ -104,6 +135,7 @@ async function runAgent() {
   }
 }
 
+// Start autonomous agent
 function startAgent() {
 
   if (agentStarted) {
@@ -116,63 +148,82 @@ function startAgent() {
     "🚀 BillWise autonomous agent initialized."
   );
 
+  // Run immediately
   runAgent();
 
+  // Run every 10 minutes
   setInterval(
     runAgent,
     10 * 60 * 1000
   );
 }
 
-app.post("/api/agent/init", (req, res) => {
+// Initialize agent
+app.post(
+  "/api/agent/init",
+  (req, res) => {
 
-  startAgent();
+    startAgent();
 
-  res.json({
-    agentId: AGENT_ID
-  });
-});
-
-app.get("/api/agent/feed", (req, res) => {
-
-  const agentId = req.query.agentId;
-
-  if (agentId !== AGENT_ID) {
-    return res.status(404).json({
-      posts: []
+    res.json({
+      agentId: AGENT_ID
     });
   }
+);
 
-  const memory = loadMemory();
+// Published feed
+app.get(
+  "/api/agent/feed",
+  (req, res) => {
 
-  const posts =
-    memory.publishedTopics
-      .map((post) => ({
-        id: post.id,
-        createdAt: post.createdAt,
-        text: post.text,
-        rationale: post.rationale,
-        sources: post.sources
-      }))
-      .sort(
-        (a, b) =>
-          new Date(b.createdAt) -
-          new Date(a.createdAt)
-      );
+    const agentId =
+      req.query.agentId;
 
-  res.json({
-    posts
-  });
-});
+    if (agentId !== AGENT_ID) {
 
+      return res.status(404).json({
+        posts: []
+      });
+    }
+
+    const memory = loadMemory();
+
+    const posts =
+      memory.publishedTopics
+        .map((post) => ({
+          id: post.id,
+          createdAt: post.createdAt,
+          text: post.text,
+          rationale: post.rationale,
+          sources: post.sources
+        }))
+        .sort(
+          (a, b) =>
+            new Date(b.createdAt) -
+            new Date(a.createdAt)
+        );
+
+    res.json({
+      posts
+    });
+  }
+);
+
+// Homepage
 app.get("/", (req, res) => {
-  res.send("BillWise AI Agent is running 🚀");
+  res.send(
+    "BillWise AI Agent is running 🚀"
+  );
 });
 
-const PORT = process.env.PORT || 3000;
+// Render provides PORT
+const PORT =
+  process.env.PORT || 3000;
 
 app.listen(PORT, () => {
+
   console.log(
     `BillWise API running on port ${PORT}`
   );
+
 });
