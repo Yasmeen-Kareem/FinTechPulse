@@ -27,14 +27,31 @@ app.use((req, res, next) => {
 });
 
 const MEMORY_FILE = "memory.json";
-const AGENT_ID = "billwise-001";
+const AGENT_ID = "fintechpulse-001";
 
 let agentStarted = false;
+let agentTimer = null;
 
 function loadMemory() {
-  return JSON.parse(
+  if (!fs.existsSync(MEMORY_FILE)) {
+    return {
+      publishedTopics: [],
+      rejectedTopics: []
+    };
+  }
+
+  const memory = JSON.parse(
     fs.readFileSync(MEMORY_FILE, "utf8")
   );
+
+  // Make sure required arrays exist
+  memory.publishedTopics =
+    memory.publishedTopics || [];
+
+  memory.rejectedTopics =
+    memory.rejectedTopics || [];
+
+  return memory;
 }
 
 function saveMemory(memory) {
@@ -44,10 +61,10 @@ function saveMemory(memory) {
   );
 }
 
-// Autonomous BillWise scan
+// Autonomous FinTechPulse scan
 async function runAgent() {
   console.log(
-    "🤖 BillWise autonomous scan started."
+    "\n🤖 FinTechPulse autonomous scan started."
   );
 
   try {
@@ -61,6 +78,7 @@ async function runAgent() {
 
     for (const topic of topics) {
 
+      // Avoid publishing the same source twice
       const alreadyPublished =
         memory.publishedTopics.some(
           (post) =>
@@ -69,9 +87,13 @@ async function runAgent() {
         );
 
       if (alreadyPublished) {
+        console.log(
+          `⏭️ Already published: ${topic.title}`
+        );
         continue;
       }
 
+      // Editorial decision
       const evaluation =
         evaluateTopic(topic);
 
@@ -92,17 +114,18 @@ async function runAgent() {
         continue;
       }
 
-      // Publish suitable topic
+      // Publish selected topic
       const post = {
-        id: `billwise-${Date.now()}`,
+        id: `fintechpulse-${Date.now()}`,
 
         createdAt:
           new Date().toISOString(),
 
         text:
-          `${topic.title}. BillWise tracks this ` +
-          `because it has practical relevance to ` +
-          `money, payments, billing or financial technology.`,
+          `${topic.title}. FinTechPulse selected this ` +
+          `development because it is relevant to ` +
+          `financial technology, digital payments, ` +
+          `banking technology, or AI in finance.`,
 
         rationale:
           evaluation.reason,
@@ -118,18 +141,20 @@ async function runAgent() {
         `✅ PUBLISHED: ${topic.title}`
       );
 
-      // Publish one topic per scan
+      // One new post per autonomous scan
       break;
     }
 
     saveMemory(memory);
 
-    console.log("💾 Memory updated.");
+    console.log(
+      "💾 FinTechPulse memory updated."
+    );
 
   } catch (error) {
 
     console.error(
-      "❌ Agent error:",
+      "❌ FinTechPulse agent error:",
       error.message
     );
   }
@@ -145,16 +170,17 @@ function startAgent() {
   agentStarted = true;
 
   console.log(
-    "🚀 BillWise autonomous agent initialized."
+    "🚀 FinTechPulse autonomous agent initialized."
   );
 
   // Run immediately
   runAgent();
 
-  // Run every 10 minutes
-  setInterval(
+  // Run automatically every 1 minute
+  // Use 10 minutes later for final evaluation if preferred
+  agentTimer = setInterval(
     runAgent,
-    10 * 60 * 1000
+    60 * 1000
   );
 }
 
@@ -212,7 +238,7 @@ app.get(
 // Homepage
 app.get("/", (req, res) => {
   res.send(
-    "BillWise AI Agent is running 🚀"
+    "FinTechPulse Autonomous AI Agent is running 🚀"
   );
 });
 
@@ -223,7 +249,7 @@ const PORT =
 app.listen(PORT, () => {
 
   console.log(
-    `BillWise API running on port ${PORT}`
+    `🚀 FinTechPulse API running on port ${PORT}`
   );
 
 });

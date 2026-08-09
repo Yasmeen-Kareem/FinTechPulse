@@ -1,77 +1,123 @@
 function evaluateTopic(topic) {
-  const text = topic.title.toLowerCase();
+  const title = (topic.title || "").toLowerCase();
 
-  const positiveKeywords = [
-    "invoice",
-    "billing",
+  const strongFintechKeywords = [
+    "fintech",
+    "financial technology",
     "payment",
     "payments",
+    "digital payment",
+    "digital payments",
     "upi",
     "banking",
-    "fintech",
-    "financial",
-    "accounting",
-    "expense",
-    "subscription",
-    "fraud detection",
-    "financial security",
-    "ai accounting",
-    "ai finance",
-    "ai payment",
-    "ai invoice"
+    "bank",
+    "digital bank",
+    "neobank",
+    "open banking",
+    "credit",
+    "lending",
+    "loan",
+    "insurance",
+    "insurtech",
+    "wealthtech",
+    "financial services",
+    "financial infrastructure",
+    "payment infrastructure",
+    "digital wallet",
+    "wallet",
+    "fraud",
+    "financial fraud",
+    "financial crime",
+    "rbi",
+    "central bank",
+    "interest rate",
+    "monetary policy",
+    "financial regulation",
+    "fintech regulation",
+    "banking regulation",
+    "financial cybersecurity",
+    "payment security",
+    "financial ai",
+    "ai in finance",
+    "ai banking",
+    "ai payments",
+    "blockchain finance",
+    "stablecoin"
   ];
 
-  const negativeKeywords = [
-    "virus",
-    "malware",
-    "celebrity",
+  const supportingKeywords = [
+    "artificial intelligence",
+    "ai",
+    "machine learning",
+    "automation",
+    "cybersecurity",
+    "data",
+    "technology"
+  ];
+
+  const irrelevantKeywords = [
     "movie",
+    "film",
+    "music",
+    "celebrity",
+    "sports",
     "gaming",
-    "censorship",
-    "politics",
-    "conspiracy",
+    "recipe",
+    "fashion",
+    "travel",
     "entertainment"
   ];
 
-  const positiveMatches = positiveKeywords.filter(
-    (keyword) => text.includes(keyword)
+  // Reject clearly unrelated topics
+  const irrelevantMatch = irrelevantKeywords.find(
+    (keyword) => title.includes(keyword)
   );
 
-  const negativeMatches = negativeKeywords.filter(
-    (keyword) => text.includes(keyword)
-  );
-
-  // Reject obviously irrelevant or risky topics
-  if (negativeMatches.length > 0) {
+  if (irrelevantMatch) {
     return {
       decision: "reject",
-      score: 0,
       reason:
-        "Rejected because the topic does not provide a useful connection to everyday billing, payments or financial technology."
+        `Rejected because the topic is unrelated to FinTech. ` +
+        `Detected unrelated category: ${irrelevantMatch}.`
     };
   }
 
-  // Require a strong finance/billing connection
-  if (positiveMatches.length === 0) {
+  // Strong FinTech relevance
+  const fintechMatches =
+    strongFintechKeywords.filter(
+      (keyword) => title.includes(keyword)
+    );
+
+  if (fintechMatches.length >= 1) {
     return {
-      decision: "reject",
-      score: 10,
+      decision: "publish",
       reason:
-        "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus."
+        `Selected because the topic has direct FinTech relevance. ` +
+        `Relevant signals: ${fintechMatches.join(", ")}.`
     };
   }
 
-  const score = Math.min(
-    50 + positiveMatches.length * 15,
-    100
-  );
+  // AI/technology alone is NOT enough
+  const technologyMatches =
+    supportingKeywords.filter(
+      (keyword) => title.includes(keyword)
+    );
+
+  if (technologyMatches.length >= 2) {
+    return {
+      decision: "reject",
+      reason:
+        "Rejected because the topic is primarily general AI or technology news and does not demonstrate sufficient relevance to financial technology."
+    };
+  }
 
   return {
-    decision: "publish",
-    score: score,
+    decision: "reject",
     reason:
-      "Selected because the topic has a clear connection to AI, payments, billing or financial technology and can provide practical value to everyday users."
+      "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance."
   };
 }
 
-module.exports = { evaluateTopic };
+module.exports = {
+  evaluateTopic
+};

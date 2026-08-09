@@ -40,6 +40,69 @@
       "sources": [
         "https://techcrunch.com/2026/07/24/techcrunch-disrupt-2026s-new-smart-money-stage-explores-fintech-payments-ai-and-everything-between/"
       ]
+    },
+    {
+      "id": "billwise-1786269427408",
+      "createdAt": "2026-08-09T09:57:07.408Z",
+      "text": "Natural raises $30M to reinvent payments for AI agents — and take on Stripe. BillWise tracks this because it has practical relevance to money, payments, billing or financial technology.",
+      "rationale": "Selected because the topic has a clear connection to AI, payments, billing or financial technology and can provide practical value to everyday users.",
+      "sources": [
+        "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/"
+      ]
+    },
+    {
+      "id": "billwise-1786276734595",
+      "createdAt": "2026-08-09T11:58:54.595Z",
+      "text": "Stripe and Advent reportedly offered to buy PayPal for around $53.4B. BillWise tracks this because it has practical relevance to money, payments, billing or financial technology.",
+      "rationale": "Selected because the topic has direct relevance to financial technology, digital payments, banking, financial services, or FinTech innovation.",
+      "sources": [
+        "https://techcrunch.com/2026/07/15/stripe-and-advent-reportedly-offered-to-buy-paypal-for-around-53-4b/"
+      ]
+    },
+    {
+      "id": "billwise-1786278020157",
+      "createdAt": "2026-08-09T12:20:20.157Z",
+      "text": "OpenAI says it slowed Astra model development over security concerns. BillWise tracks this because it has practical relevance to money, payments, billing or financial technology.",
+      "rationale": "Selected because the topic represents a meaningful technology development with potential relevance to the FinTech ecosystem.",
+      "sources": [
+        "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/"
+      ]
+    },
+    {
+      "id": "fintechpulse-1786278583892",
+      "createdAt": "2026-08-09T12:29:43.892Z",
+      "text": "OpenAI acquires presentation startup NextSlide. FinTechPulse selected this development because it is relevant to financial technology, digital payments, banking technology, or AI in finance.",
+      "rationale": "Selected because the topic is relevant to FinTech or financial technology. Relevant signals detected: ai.",
+      "sources": [
+        "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/"
+      ]
+    },
+    {
+      "id": "fintechpulse-1786278643354",
+      "createdAt": "2026-08-09T12:30:43.354Z",
+      "text": "After Rippling blew millions on AI in months, it built an employee ROI tool. FinTechPulse selected this development because it is relevant to financial technology, digital payments, banking technology, or AI in finance.",
+      "rationale": "Selected because the topic is relevant to FinTech or financial technology. Relevant signals detected: ai.",
+      "sources": [
+        "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/"
+      ]
+    },
+    {
+      "id": "fintechpulse-1786278704653",
+      "createdAt": "2026-08-09T12:31:44.653Z",
+      "text": "Cloudflare launches Kitesurf, a browser built for AI agents. FinTechPulse selected this development because it is relevant to financial technology, digital payments, banking technology, or AI in finance.",
+      "rationale": "Selected because the topic is relevant to FinTech or financial technology. Relevant signals detected: ai.",
+      "sources": [
+        "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/"
+      ]
+    },
+    {
+      "id": "fintechpulse-1786278763394",
+      "createdAt": "2026-08-09T12:32:43.394Z",
+      "text": "The Download: Google’s AI shake-up and Meta’s rogue model. FinTechPulse selected this development because it is relevant to financial technology, digital payments, banking technology, or AI in finance.",
+      "rationale": "Selected because the topic is relevant to FinTech or financial technology. Relevant signals detected: ai.",
+      "sources": [
+        "https://www.technologyreview.com/2026/08/06/1141278/the-download-google-ai-shake-up-meta-rogue-model/"
+      ]
     }
   ],
   "rejectedTopics": [
@@ -131,6 +194,376 @@
       "topic": "The Download: NASA’s new telescope and Chinese tech import curbs",
       "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
       "checkedAt": "2026-08-08T06:05:40.064Z"
+    },
+    {
+      "topic": "How ideas of a vast censorship network moved from the online fringe to Trump policy",
+      "reason": "Rejected because the topic does not provide a useful connection to everyday billing, payments or financial technology.",
+      "checkedAt": "2026-08-09T09:57:07.408Z"
+    },
+    {
+      "topic": "The Download: Google’s AI shake-up and Meta’s rogue model",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T09:57:07.408Z"
+    },
+    {
+      "topic": "Puzzle Corner",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T09:57:07.408Z"
+    },
+    {
+      "topic": "The Download: NASA’s new telescope and Chinese tech import curbs",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T09:57:07.408Z"
+    },
+    {
+      "topic": "How ideas of a vast censorship network moved from the online fringe to Trump policy",
+      "reason": "Rejected because the topic does not provide a useful connection to everyday billing, payments or financial technology.",
+      "checkedAt": "2026-08-09T10:07:07.216Z"
+    },
+    {
+      "topic": "The Download: Google’s AI shake-up and Meta’s rogue model",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:07:07.216Z"
+    },
+    {
+      "topic": "Puzzle Corner",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:07:07.216Z"
+    },
+    {
+      "topic": "The Download: NASA’s new telescope and Chinese tech import curbs",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:07:07.216Z"
+    },
+    {
+      "topic": "Stripe and Advent reportedly offered to buy PayPal for around $53.4B",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:07:07.217Z"
+    },
+    {
+      "topic": "Don’t want to invest in Elon Musk? Two new ETFs explicitly exclude him",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:07:07.217Z"
+    },
+    {
+      "topic": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:07:07.217Z"
+    },
+    {
+      "topic": "OpenAI acquires presentation startup NextSlide",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:07:07.217Z"
+    },
+    {
+      "topic": "OpenAI says it slowed Astra model development over security concerns",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:07:07.217Z"
+    },
+    {
+      "topic": "After Rippling blew millions on AI in months, it built an employee ROI tool",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:07:07.217Z"
+    },
+    {
+      "topic": "Cloudflare launches Kitesurf, a browser built for AI agents",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:07:07.218Z"
+    },
+    {
+      "topic": "How ideas of a vast censorship network moved from the online fringe to Trump policy",
+      "reason": "Rejected because the topic does not provide a useful connection to everyday billing, payments or financial technology.",
+      "checkedAt": "2026-08-09T10:17:07.055Z"
+    },
+    {
+      "topic": "The Download: Google’s AI shake-up and Meta’s rogue model",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:17:07.055Z"
+    },
+    {
+      "topic": "Puzzle Corner",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:17:07.055Z"
+    },
+    {
+      "topic": "The Download: NASA’s new telescope and Chinese tech import curbs",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:17:07.056Z"
+    },
+    {
+      "topic": "Stripe and Advent reportedly offered to buy PayPal for around $53.4B",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:17:07.056Z"
+    },
+    {
+      "topic": "Don’t want to invest in Elon Musk? Two new ETFs explicitly exclude him",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:17:07.056Z"
+    },
+    {
+      "topic": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:17:07.056Z"
+    },
+    {
+      "topic": "OpenAI acquires presentation startup NextSlide",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:17:07.056Z"
+    },
+    {
+      "topic": "OpenAI says it slowed Astra model development over security concerns",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:17:07.056Z"
+    },
+    {
+      "topic": "After Rippling blew millions on AI in months, it built an employee ROI tool",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:17:07.056Z"
+    },
+    {
+      "topic": "Cloudflare launches Kitesurf, a browser built for AI agents",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T10:17:07.056Z"
+    },
+    {
+      "topic": "How ideas of a vast censorship network moved from the online fringe to Trump policy",
+      "reason": "Rejected because the topic does not provide a useful connection to everyday billing, payments or financial technology.",
+      "checkedAt": "2026-08-09T11:52:54.571Z"
+    },
+    {
+      "topic": "The Download: Google’s AI shake-up and Meta’s rogue model",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T11:52:54.571Z"
+    },
+    {
+      "topic": "Puzzle Corner",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T11:52:54.571Z"
+    },
+    {
+      "topic": "The Download: NASA’s new telescope and Chinese tech import curbs",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T11:52:54.571Z"
+    },
+    {
+      "topic": "Stripe and Advent reportedly offered to buy PayPal for around $53.4B",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T11:52:54.572Z"
+    },
+    {
+      "topic": "Don’t want to invest in Elon Musk? Two new ETFs explicitly exclude him",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T11:52:54.572Z"
+    },
+    {
+      "topic": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T11:52:54.572Z"
+    },
+    {
+      "topic": "OpenAI acquires presentation startup NextSlide",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T11:52:54.572Z"
+    },
+    {
+      "topic": "OpenAI says it slowed Astra model development over security concerns",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T11:52:54.572Z"
+    },
+    {
+      "topic": "After Rippling blew millions on AI in months, it built an employee ROI tool",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T11:52:54.572Z"
+    },
+    {
+      "topic": "Cloudflare launches Kitesurf, a browser built for AI agents",
+      "reason": "Rejected because the topic does not have a strong enough connection to BillWise's finance and billing focus.",
+      "checkedAt": "2026-08-09T11:52:54.572Z"
+    },
+    {
+      "topic": "Don’t want to invest in Elon Musk? Two new ETFs explicitly exclude him",
+      "reason": "Rejected because the topic does not contain enough evidence of direct relevance to FinTech, financial technology, or AI in finance.",
+      "checkedAt": "2026-08-09T12:20:20.157Z"
+    },
+    {
+      "topic": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "reason": "Rejected because the topic does not contain enough evidence of direct relevance to FinTech, financial technology, or AI in finance.",
+      "checkedAt": "2026-08-09T12:20:20.157Z"
+    },
+    {
+      "topic": "OpenAI acquires presentation startup NextSlide",
+      "reason": "Rejected because the topic does not contain enough evidence of direct relevance to FinTech, financial technology, or AI in finance.",
+      "checkedAt": "2026-08-09T12:20:20.157Z"
+    },
+    {
+      "topic": "Don’t want to invest in Elon Musk? Two new ETFs explicitly exclude him",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:29:43.892Z"
+    },
+    {
+      "topic": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:29:43.892Z"
+    },
+    {
+      "topic": "Don’t want to invest in Elon Musk? Two new ETFs explicitly exclude him",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:30:43.354Z"
+    },
+    {
+      "topic": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:30:43.354Z"
+    },
+    {
+      "topic": "Don’t want to invest in Elon Musk? Two new ETFs explicitly exclude him",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:31:44.653Z"
+    },
+    {
+      "topic": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:31:44.653Z"
+    },
+    {
+      "topic": "Don’t want to invest in Elon Musk? Two new ETFs explicitly exclude him",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:32:43.394Z"
+    },
+    {
+      "topic": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:32:43.394Z"
+    },
+    {
+      "topic": "How ideas of a vast censorship network moved from the online fringe to Trump policy",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:32:43.394Z"
+    },
+    {
+      "topic": "Don’t want to invest in Elon Musk? Two new ETFs explicitly exclude him",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:33:44.089Z"
+    },
+    {
+      "topic": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:33:44.089Z"
+    },
+    {
+      "topic": "How ideas of a vast censorship network moved from the online fringe to Trump policy",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:33:44.089Z"
+    },
+    {
+      "topic": "Puzzle Corner",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:33:44.089Z"
+    },
+    {
+      "topic": "The Download: NASA’s new telescope and Chinese tech import curbs",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:33:44.089Z"
+    },
+    {
+      "topic": "Don’t want to invest in Elon Musk? Two new ETFs explicitly exclude him",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:34:43.686Z"
+    },
+    {
+      "topic": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:34:43.686Z"
+    },
+    {
+      "topic": "How ideas of a vast censorship network moved from the online fringe to Trump policy",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:34:43.687Z"
+    },
+    {
+      "topic": "Puzzle Corner",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:34:43.687Z"
+    },
+    {
+      "topic": "The Download: NASA’s new telescope and Chinese tech import curbs",
+      "reason": "Rejected because the topic does not contain enough evidence of relevance to FinTech or financial technology.",
+      "checkedAt": "2026-08-09T12:34:43.687Z"
+    },
+    {
+      "topic": "Don’t want to invest in Elon Musk? Two new ETFs explicitly exclude him",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:36:37.412Z"
+    },
+    {
+      "topic": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:36:37.412Z"
+    },
+    {
+      "topic": "How ideas of a vast censorship network moved from the online fringe to Trump policy",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:36:37.414Z"
+    },
+    {
+      "topic": "Puzzle Corner",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:36:37.414Z"
+    },
+    {
+      "topic": "The Download: NASA’s new telescope and Chinese tech import curbs",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:36:37.414Z"
+    },
+    {
+      "topic": "Don’t want to invest in Elon Musk? Two new ETFs explicitly exclude him",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:37:37.474Z"
+    },
+    {
+      "topic": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:37:37.474Z"
+    },
+    {
+      "topic": "How ideas of a vast censorship network moved from the online fringe to Trump policy",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:37:37.474Z"
+    },
+    {
+      "topic": "Puzzle Corner",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:37:37.474Z"
+    },
+    {
+      "topic": "The Download: NASA’s new telescope and Chinese tech import curbs",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:37:37.474Z"
+    },
+    {
+      "topic": "Don’t want to invest in Elon Musk? Two new ETFs explicitly exclude him",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:38:37.278Z"
+    },
+    {
+      "topic": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:38:37.278Z"
+    },
+    {
+      "topic": "How ideas of a vast censorship network moved from the online fringe to Trump policy",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:38:37.279Z"
+    },
+    {
+      "topic": "Puzzle Corner",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:38:37.279Z"
+    },
+    {
+      "topic": "The Download: NASA’s new telescope and Chinese tech import curbs",
+      "reason": "Rejected because the topic does not demonstrate sufficient relevance to FinTech, banking, payments, financial services, or AI in finance.",
+      "checkedAt": "2026-08-09T12:38:37.279Z"
     }
   ]
 }
