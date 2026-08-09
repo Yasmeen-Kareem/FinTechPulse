@@ -351,6 +351,14 @@ Built by a \*\*B.Com Computer Applications student\*\* interested in exploring t
 
 
 The project was created to explore how an autonomous AI system can continuously discover and evaluate real-world financial technology information rather than waiting for individual prompts.
+📌 Project Folder Note
 
+The project was initially developed under the local folder name billwise during the early development stage.
+
+As the project evolved into an autonomous FinTech AI persona, the project was renamed to FinTechPulse. The GitHub repository, application name, API identity, and deployment now use the FinTechPulse name.
+
+The local folder name remains billwise only because it was the original development directory. It does not affect the application, deployment, or functionality.
+
+Final project identity: FinTechPulse 🚀
 
 
